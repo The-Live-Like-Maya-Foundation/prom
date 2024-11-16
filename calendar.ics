@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Live Like Maya Foundation//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:prom-2025@example.com
+DTSTAMP:20251109T180000Z
+DTSTART:20251109T180000Z
+DTEND:20251109T220000Z
+SUMMARY:A Luminous Night Under the Stars Prom
+DESCRIPTION:A prom for children with life-threatening diseases, in memory of Maya Grace Collins.
+LOCATION:Matthew 25: Ministries
+END:VEVENT
+END:VCALENDAR
