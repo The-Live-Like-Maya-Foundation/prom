@@ -25,4 +25,5 @@ jobs:
           --account-name ${{ secrets.AZURE_STORAGE_ACCOUNT_NAME }} \
           --destination '$web' \
           --source './src' \
-          --overwrite
+          --overwrite \
+          --auth-mode login
