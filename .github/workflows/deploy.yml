@@ -13,12 +13,11 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
 
-    - name: Set up Azure CLI
-      uses: azure/setup-azure@v3
+    - name: Azure Login action
+      uses: azure/login@v2
       with:
-        client-id: ${{ secrets.AZURE_CLIENT_ID }}
-        client-secret: ${{ secrets.AZURE_CLIENT_SECRET }}
-        tenant-id: ${{ secrets.AZURE_TENANT_ID }}
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+        enable-AzPSSession: true
 
     - name: Upload files to Azure Storage
       run: |
